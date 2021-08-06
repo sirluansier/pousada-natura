@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+
+
+.container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1400px;
+}
+
+header#body.active {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    left: -6px;
+    background-color: rgba(0, 0, 0, 0.75);
+    
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    left: 77px;
+}
+.logo img {
+    height: 30px;
+    position: relative;
+    bottom: 4px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 15px;
+    position: relative;
+    right: 77px;
+}
+
+nav li a {
+    color: #fff;
+    padding-top: 2px;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #fff;
+}
+nav li a:hover{
+    color: #fff;
+    text-shadow:5px 5px 10px #fff;
+    transition: 1s;
+}
+
+.texto-principal {
+  transition: transform 0.2s;
+}
+.texto-principal:hover {
+    /*text-shadow:5px 5px 10px #000;*/
+    transform: scale(1.1);
+    cursor: default;
+}
+.viva {
+    font-family: "Pacifico";
+    color: #F8D000;
+    font-size: 200px;
+    position: relative;
+    top: 150px;
+    left: 77px;
+    z-index: 1;
+}
+
+.natureza {
+    font-family: "Roboto";
+    font-size: 200px;
+    position: relative;
+    left: 77px;
+}
+
+
+/*CTA*/
+
+.custom-btn {
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+    outline: none;
+    border: 2px solid #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 27px;
+    display: inline-block;
+  }
+  
+  .btn-6 {
+    background: #000;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #000;
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    color: #000;
+    background: #fff;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    background: #000;
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+  
+footer .container {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .container a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: #000;
+    font-weight: 700;
+}
+
+
+/*acomodações*/
+
+header .opcao01 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+header .descricao01 {
+    padding-top: 80px;
+    line-height: 200%;
+
+}
+
+header .opcao02 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+header .descricao02 {
+  padding-top: 80px;
+  line-height: 200%;
+
+}
+
+header .opcao03 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+header .descricao03 {
+  padding-top: 80px;
+  line-height: 200%;
+
+}
+
+.acomodacao {
+  transition: transform 0.2s;
+  
+}
+.acomodacao:hover {
+    text-shadow:10px 10px 5px #fff;
+    transform: scale(1.1);
+    cursor: default;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contato-icones {
+  width: 40px;
+  height: 40px;
+  box-shadow:
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,        
+  inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+
+.contato-icones:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+
+}
+
+.fechar-icones {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 600px;
+  padding: 10px;
+  padding-left: 15px;
+  grid-gap: 5px;
+}
+
+.item-galeria {
+  position: relative;
+}
+
+.item-galeria .img-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-galeria .titulo-galeria {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 16pt;
+  font-family: "Roboto";
+}
+
+.h-1{
+  grid-row: span 1;
+}
+
+.h-2{
+  grid-row: span 2;
+}
+
+.w-1{
+  grid-column: span 1;
+}
+
+.w-2{
+  grid-column: span 2;
+}
+
+.subtitulo {
+  text-shadow:5px 5px 2px #000;
+  padding: 1rem;
+  position: relative;
+  left: -6px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#popup-reserva {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup-reserva.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup-reserva {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contato-icones-reserva {
+  margin-left: 40px;
+  width: auto;
+  height: 60px;
+  box-shadow:
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,
+  inset 0px 0px 0px 0px #0001,
+  inset 0px 0px 0px 0px #fff9,        
+  inset 0px 0px 0px 0px #0001;
+  transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+
+.contato-icones-reserva:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+
+}
+
+.fechar-icones-reserva {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

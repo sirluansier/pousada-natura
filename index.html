@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Natura</title>
+    <link rel="shortcut icon" href="assets/favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        header {
+    background-image: url('/assets/bg-home.png');
+    background-size: 1450px 770px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+}
+    </style>
+</head>
+
+<body>
+    <header class="pg-acomodacoes" id="body">
+        <nav class="container">
+            <div class="logo">
+                <a href="/index.html"><img src="/assets/house.svg"> Pousada Natura</a>
+            </div>
+            <ul>
+                <li><a href="/acomodacoes.html">Acomodações</a></li>
+                <li><a href="#" onclick="toggle()">Contato</a></li>
+                <li><a href="/tour.html">Tour</a></li>
+                <li>  <a href="#" onclick="toggle02()" class="custom-btn btn-6"><span>Reserve agora!</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="texto-principal container">
+            <h2 class="viva">viva a</h2>
+            <h1 class="natureza">natureza.</h1>
+        </div>
+    </header>
+    <div id="popup">
+        <a href="#"><img src="/assets/facebook.png" alt="facebook" class="contato-icones""></a>
+        <a href="#"><img src="/assets/instagram.png" alt="instagram" class="contato-icones""></a>
+        <a href="#"><img src="/assets/whatsapp.png" alt="whatsapp" class="contato-icones""></a>
+        <a href="#"><img src="/assets/o-email.png" alt="email" class="contato-icones""></a>
+        <a href="#" onclick="toggle()"><img src="/assets/x-circle-fill.svg" alt="fechar" class="fechar-icones""></a>
+    </div>
+    <div id="popup-reserva">
+        <a href="#"><img src="/assets/booking.png" alt="booking" class="contato-icones-reserva""></a>
+        <a href="#"><img src="/assets/expedia.png" alt="expedia" class="contato-icones-reserva""></a>
+        <a href="#" onclick="toggle02()"><img src="/assets/x-circle-fill.svg" alt="fechar" class="fechar-icones-reserva""></a>
+    </div>
+
+    <footer>
+        <p class="container">Desenvolvido por <a href="#">Luan Rosa</a>.</p>
+    </footer>
+<script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('body');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+    function toggle02(){
+        var blur = document.getElementById('body');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup-reserva');
+        popup.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

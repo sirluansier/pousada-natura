@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Natura</title>
+    <link rel="shortcut icon" href="assets/favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+           header {
+    background-image: url('/assets/bg-pg01.png');
+    background-size: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: calc(100vh - 102px);
+    
+}
+    </style>
+</head>
+
+<body>
+    <header id="body">
+        <nav class="container">
+            <div class="logo">
+                <a href="/index.html"><img src="/assets/house.svg"> Pousada Natura</a>
+            </div>
+            <ul>
+                <li><a href="/acomodacoes.html">Acomodações</a></li>
+                <li><a href="#" onclick="toggle()">Contato</a></li>
+                <li><a href="/tour.html">Tour</a></li>
+                <li>  <a class="custom-btn btn-6"><span>Reserve agora!</span></a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="container subtitulo">O que você verá na pousada!</h2>
+            <div class="container container-galeria">
+                
+                <div class="item-galeria w-1 h-1">
+                    <img src="/assets/tour/pousada/img01.jpg" alt="imagem01" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 01
+                    </span>
+                </div>
+                <div class="item-galeria w-2 h-1">
+                    <img src="/assets/tour/pousada/img02.jpg" alt="imagem02" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 02
+                    </span>
+                </div>
+                <div class="item-galeria w-1 h-2">
+                    <img src="/assets/tour/pousada/img03.jpg" alt="imagem03" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 03
+                    </span>
+                </div>
+                <div class="item-galeria">
+                    <img src="/assets/tour/pousada/img04.jpg" alt="imagem03" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 04
+                    </span>
+                </div>
+                <div class="item-galeria">
+                    <img src="/assets/tour/pousada/img05.jpg" alt="imagem04" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 05
+                    </span>
+                </div>
+                <div class="item-galeria w-2 h-1">
+                    <img src="/assets/tour/pousada/img06.jpg" alt="imagem05" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 06
+                    </span>
+                </div>
+            </div>
+            <h2 class="container subtitulo">Um pouquinho da cidade!</h2>
+            <div class="container container-galeria">
+                
+                <div class="item-galeria w-1 h-1">
+                    <img src="/assets/tour/cidade/img01.jpg" alt="imagem01" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 01
+                    </span>
+                </div>
+                <div class="item-galeria w-2 h-1">
+                    <img src="/assets/tour/cidade/img02.jpg" alt="imagem02" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 02
+                    </span>
+                </div>
+                <div class="item-galeria w-1 h-2">
+                    <img src="/assets/tour/cidade/img03.jpg" alt="imagem03" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 03
+                    </span>
+                </div>
+                <div class="item-galeria">
+                    <img src="/assets/tour/cidade/img04.jpg" alt="imagem03" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 04
+                    </span>
+                </div>
+                <div class="item-galeria">
+                    <img src="/assets/tour/cidade/img05.jpg" alt="imagem04" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 05
+                    </span>
+                </div>
+                <div class="item-galeria w-2 h-1">
+                    <img src="/assets/tour/cidade/img06.jpg" alt="imagem05" class="img-galeria">
+                    <span class="titulo-galeria">
+                        Imagem 06
+                    </span>
+                </div>
+            </div>
+    </header>
+
+    <div id="popup">
+        <a href="#"><img src="/assets/facebook.png" alt="facebook" class="contato-icones""></a>
+        <a href="#"><img src="/assets/instagram.png" alt="instagram" class="contato-icones""></a>
+        <a href="#"><img src="/assets/whatsapp.png" alt="whatsapp" class="contato-icones""></a>
+        <a href="#"><img src="/assets/o-email.png" alt="email" class="contato-icones""></a>
+        <a href="#" onclick="toggle()"><img src="/assets/x-circle-fill.svg" alt="fechar" class="fechar-icones""></a>
+    </div>
+    <div id="popup-reserva">
+        <a href="#"><img src="/assets/booking.png" alt="booking" class="contato-icones-reserva""></a>
+        <a href="#"><img src="/assets/expedia.png" alt="expedia" class="contato-icones-reserva""></a>
+        <a href="#" onclick="toggle02()"><img src="/assets/x-circle-fill.svg" alt="fechar" class="fechar-icones-reserva""></a>
+    </div>
+    <footer>
+        <p class="container">Desenvolvido por <a href="#">Luan Rosa</a>.</p>
+    </footer>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('body');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+        function toggle02(){
+        var blur = document.getElementById('body');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup-reserva');
+        popup.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
